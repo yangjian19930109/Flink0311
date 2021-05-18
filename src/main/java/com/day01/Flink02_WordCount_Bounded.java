@@ -10,7 +10,7 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.util.Collector;
 
 /**
- * @Description：
+ * @Description：有界流
  * @Author：YJ
  * @Createtime 2021/5/17 20:29
  */
@@ -18,6 +18,9 @@ public class Flink02_WordCount_Bounded {
     public static void main(String[] args) throws Exception {
         // 1.获取执行环境
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+
+        // 设置并行度
+        env.setParallelism(1);
 
         // 2.读取文件创建流
         DataStreamSource<String> input = env.readTextFile("input");
