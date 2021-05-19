@@ -12,6 +12,10 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
  * @Author：YJ
  * @Createtime 2021/5/17 21:18
  */
+
+/**
+ *
+ */
 public class Flink03_WordCount_Unbounded {
     public static void main(String[] args) throws Exception {
 
@@ -36,8 +40,8 @@ public class Flink03_WordCount_Unbounded {
         SingleOutputStreamOperator<Tuple2<String, Integer>> result = keydeStream.sum(1);
 
         // 6.打印结果
-        socketTextStream.print("Line");
-        wordToOneDS.print("WordToDS");
+//        socketTextStream.print("Line");
+//        wordToOneDS.print("WordToDS");
         result.print("Result");
 
         // 7.启动任务
