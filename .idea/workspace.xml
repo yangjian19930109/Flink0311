@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf2b43b9-0511-4faa-8526-41464ed19240" name="Default Changelist" comment="">
+    <list default="true" id="cf2b43b9-0511-4faa-8526-41464ed19240" name="Default Changelist" comment="'0519'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/day01/Flink03_WordCount_Unbounded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/day01/Flink03_WordCount_Unbounded.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/day01/Flink03_WordCount_Unbounded$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/day01/Flink03_WordCount_Unbounded$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/day01/Flink03_WordCount_Unbounded.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/day01/Flink03_WordCount_Unbounded.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wordCount-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/wordCount-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wordCount.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/wordCount.jar" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +55,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -126,6 +129,7 @@
       <updated>1621157183601</updated>
       <workItem from="1621157186398" duration="9333000" />
       <workItem from="1621261162239" duration="3891000" />
+      <workItem from="1621437847074" duration="2788000" />
     </task>
     <servers />
   </component>
@@ -144,5 +148,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="'0519'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'0519'" />
   </component>
 </project>

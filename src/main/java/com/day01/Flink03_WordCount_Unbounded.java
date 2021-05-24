@@ -14,19 +14,26 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
  */
 
 /**
- *
+ * 关于并行度优先级问题
+ * 1.代码中算子单独设置
+ * 2.代码中 Env 全局设置
+ * 3.提交参数
+ * 4.默认配置信息
  */
 public class Flink03_WordCount_Unbounded {
     public static void main(String[] args) throws Exception {
 
         // 1.获取执行环境
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+//        env.setParallelism(4); // 设置全局并行度都是1
 
         // 2.读取端口数据创建流
         DataStreamSource<String> socketTextStream = env.socketTextStream("hadoop106", 9999);
 
         // 3.将每行数据压平并转换为元组
-        SingleOutputStreamOperator<Tuple2<String, Integer>> wordToOneDS = socketTextStream.flatMap(new Flink02_WordCount_Bounded.LineToTupleFlatMapFunction());
+        SingleOutputStreamOperator<Tuple2<String, Integer>> wordToOneDS = socketTextStream
+                .flatMap(new Flink02_WordCount_Bounded.LineToTupleFlatMapFunction())
+                .setParallelism(2); // 设置独立并行度
 
         // 4.分组
         KeyedStream<Tuple2<String, Integer>, String> keydeStream = wordToOneDS.keyBy(new KeySelector<Tuple2<String, Integer>, String>() {
@@ -42,7 +49,7 @@ public class Flink03_WordCount_Unbounded {
         // 6.打印结果
 //        socketTextStream.print("Line");
 //        wordToOneDS.print("WordToDS");
-        result.print("Result");
+        result.print("Result").setParallelism(3);
 
         // 7.启动任务
         env.execute();
