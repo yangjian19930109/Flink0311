@@ -1,8 +1,12 @@
 com\day01\Flink01_WordCount_Batch$MyFlatMapFuntion.class
 com\day01\Flink03_WordCount_Unbounded$1.class
 com\day01\Flink02_WordCount_Bounded$1.class
-com\day01\Flink02_WordCount_Bounded.class
+com\day02\Flink01_WordCount_Charn$1.class
 com\day01\Flink02_WordCount_Bounded$LineToTupleFlatMapFunction.class
+com\day02\Flink01_WordCount_Charn$3.class
 com\day01\Flink01_WordCount_Batch$1.class
-com\day01\Flink03_WordCount_Unbounded.class
 com\day01\Flink01_WordCount_Batch.class
+com\day01\Flink02_WordCount_Bounded.class
+com\day01\Flink03_WordCount_Unbounded.class
+com\day02\Flink01_WordCount_Charn.class
+com\day02\Flink01_WordCount_Charn$2.class
