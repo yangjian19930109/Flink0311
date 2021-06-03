@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf2b43b9-0511-4faa-8526-41464ed19240" name="Default Changelist" comment="'0519'">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/day02/Flink01_WordCount_Charn.java" afterDir="false" />
+    <list default="true" id="cf2b43b9-0511-4faa-8526-41464ed19240" name="Default Changelist" comment="'0530'">
+      <change afterPath="$PROJECT_DIR$/input/sensor.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bean/WaterSensor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/day02/Flink02_Source_Collection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/day02/Flink03_Source_File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/day02/Flink04_Source_Socket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/day02/Flink05_Source_Kafa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/day02/Flink06_Source_Kafa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/day01/Flink03_WordCount_Unbounded.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/day01/Flink03_WordCount_Unbounded.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/day01/Flink03_WordCount_Unbounded.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/day01/Flink03_WordCount_Unbounded.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wordCount-jar-with-dependencies.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wordCount.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/wordCount.jar" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -72,13 +71,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Flink03_WordCount_Unbounded">
-    <configuration name="Flink01_WordCount_Batch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.day01.Flink01_WordCount_Batch" />
+  <component name="RunManager" selected="Application.Flink06_Source_Kafa">
+    <configuration name="Flink02_Source_Collection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.day02.Flink02_Source_Collection" />
       <module name="Flink0311" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.day01.*" />
+          <option name="PATTERN" value="com.day02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flink02_WordCount_Bounded" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.day01.Flink02_WordCount_Bounded" />
+    <configuration name="Flink03_Source_File" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.day02.Flink03_Source_File" />
       <module name="Flink0311" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.day01.*" />
+          <option name="PATTERN" value="com.day02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +98,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flink03_WordCount_Unbounded" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.day01.Flink03_WordCount_Unbounded" />
+    <configuration name="Flink04_Source_Socket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.day02.Flink04_Source_Socket" />
       <module name="Flink0311" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.day01.*" />
+          <option name="PATTERN" value="com.day02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Flink05_Source_Kafa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.day02.Flink05_Source_Kafa" />
+      <module name="Flink0311" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.day02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Flink06_Source_Kafa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.day02.Flink06_Source_Kafa" />
+      <module name="Flink0311" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.day02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,9 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Flink03_WordCount_Unbounded" />
-        <item itemvalue="Application.Flink02_WordCount_Bounded" />
-        <item itemvalue="Application.Flink01_WordCount_Batch" />
+        <item itemvalue="Application.Flink06_Source_Kafa" />
+        <item itemvalue="Application.Flink05_Source_Kafa" />
+        <item itemvalue="Application.Flink04_Source_Socket" />
+        <item itemvalue="Application.Flink03_Source_File" />
+        <item itemvalue="Application.Flink02_Source_Collection" />
       </list>
     </recent_temporary>
   </component>
@@ -133,6 +160,8 @@
       <workItem from="1621157186398" duration="9333000" />
       <workItem from="1621261162239" duration="3891000" />
       <workItem from="1621437847074" duration="12519000" />
+      <workItem from="1622356166785" duration="11562000" />
+      <workItem from="1622731249284" duration="797000" />
     </task>
     <servers />
   </component>
@@ -154,6 +183,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="'0519'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'0519'" />
+    <MESSAGE value="'0530'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'0530'" />
   </component>
 </project>
